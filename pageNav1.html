@@ -23,7 +23,7 @@
             align-items: center;
         }
 
-        @media (min-width: 1024px) {
+        @media (min-width: 500px) {
             nav ul {
                 flex-direction: row;
                 gap: 10px;
@@ -32,6 +32,14 @@
             nav ul li {
                 padding: 10px 20px;
                 font-size: 16px;
+            }
+
+            /* nav ul li:nth-child(1) {
+                margin-right: auto;
+            } */
+
+            nav ul li:nth-child(2) {
+                margin-left: auto;
             }
         }
     </style>
@@ -42,7 +50,7 @@
     <nav>
         <!-- ul>li*5>{選項$} -->
         <ul>
-            <li>選項1</li>
+            <li>LOGO</li>
             <li>選項2</li>
             <li>選項3</li>
             <li>選項4</li>
