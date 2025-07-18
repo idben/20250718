@@ -4,14 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            --nav-w: 100px;
+            --aside-w: 100px;
+            display: flex;
+
+            .nav {
+                width: var(--nav-w);
+                background-color: #d6cece;
+            }
+
+            .main {
+                width: calc(100% - var(--nav-w) - var(--aside-w));
+            }
+
+            .aside {
+                width: var(--aside-w);
+                background-color: #d6cece;
+            }
+        }
+    </style>
     <title>Flex 排版 1</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="nav"></div>
-        <div class="main"></div>
-        <div class="aside"></div>
+        <div class="nav">nav</div>
+        <div class="main">main</div>
+        <div class="aside">aside</div>
     </div>
 </body>
 
